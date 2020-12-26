@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+         rel="stylesheet" 
+         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+         crossorigin="anonymous">
+         <link href="../css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="topNav">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="home.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="addproduct.html">...</a>
+                <a href="contact.html">Contact</a>
+                <a href="product.html">Products</a>
+            </div>
+            <div id="open_btn">
+                <button class="openbtn" onclick="openNav()"><img src="../image/home/Group 4.png"></button> 
+            </div>
+      
+    
+            <div id="icon">
+                <a href="home.html">atn</a>
+            </div>
+        </div>
+
+
+    <div class="center">
+        <form id="frm-login">
+            <div id="error"></div>
+
+            <div class="page_tag">
+                Login
+            </div>
+            
+                
+                <label for="username" class="label">Username</label>
+                <input type="email" name="username" class="input_field" id="username" placeholder="name@expamle.com" required>
+                
+            
+                <label for="password" class="label">Password</label>
+                <input type="password" name="password" class="input_field" id="password" placeholder="6 - 20 characters" minlength="6" maxlength="20" required>
+            
+            
+            <div class="login_page_btn">
+                <input type="submit" id="btn-login" class="btn_login" value="Login">
+            </div>
+        </form>
+        
+        <div class="bonus">
+           <br> Don't have account? Register <a href="register.html" rel="external"> here</a>.
+        </div>
+
+        
+    </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../js/index.js"></script>
+    </body>
+
+
+
+    <script>
+    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "400px";
+            document.getElementById("open_btn").style.marginRight = "400px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("open_btn").style.marginRight = "0";
+            document.body.style.backgroundColor = "white";
+        }
+</script>
+</html>

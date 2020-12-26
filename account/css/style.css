@@ -1,0 +1,287 @@
+/* Sidebar menu */
+  .sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 19%; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+
+  /* The sidebar links */
+    .sidebar a {
+      padding: 10px 10px 10px 32px;
+      text-decoration: none;
+      font-size: 30px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+      font-family: Arial;
+    }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: white;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 0px;
+  }
+
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    float: right;
+    right: 117px;
+    top: 55px;
+    position: absolute;
+  }
+
+  .openbtn:hover {
+    background-color: transparent;
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #open_btn {
+    transition: margin-right .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+#icon {
+    left: 117px;
+    top: 38px;
+    position: absolute;
+    overflow: visible;
+    width: 182px;
+    height: 80px;
+    text-align: center;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    cursor: pointer;
+    
+}
+
+#icon a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Home.html */
+* {
+  box-sizing: border-box;
+}
+
+#leftcolumn {
+  position: absolute;
+	width: 50%;
+	height: 783px;
+	left: 140px;
+  top: 186px;
+  overflow: visible;
+   
+  }
+#sameimage {
+  position: absolute;
+	width: 750px;
+	height: 783px;
+	left: 0px;
+  top: 0px;
+	overflow: visible;
+}
+
+#rightcolumn {
+  position: static;
+  float: right;
+  width: 50%;
+  height: 783px;
+  padding-left: 35px;
+  margin-top: 19%;
+}
+#rightcolumn h2 {
+  font-family: Avenir;
+  font-size: 45px;
+  font-weight: black;
+  text-align: center;
+}
+
+#rightcolumn p {
+  font-family: Avenir;
+  font-size: 20px;
+  padding-left: 5px;
+  text-align: center;
+  font-weight: light;
+}
+#rightcolumn button {
+  position: absolute;
+  transition-duration: 0.4s;
+  border: 2px solid #555555;
+  background-color: white;
+  padding: 14px 40px;
+  text-align: center;
+  cursor: pointer;
+  font-family: Avenir;
+  font-size: 15px;
+  right: 21%;
+}
+
+#rightcolumn button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* REGISTER FORM */
+#frm-register {
+    margin-top: 7%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+  
+.label {
+    font-family: Avenir;
+    font-weight: bold;
+}
+  
+.input_field{
+    width: 100%;
+    padding: 15px;
+    margin: 7px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+  
+.register_page_btn {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.btn_register {
+    transition-duration: 0.4s;
+    border: none;
+    padding: 14px 40px;
+    text-align: center;
+}
+  
+.btn_register:hover {
+    background-color: #606466  ;
+    color: white;
+}
+.btn_clear {
+    transition-duration: 0.4s;
+    border: none;
+    padding: 14px 40px;
+    text-align: center;
+}
+  
+.btn_clear:hover {
+    background-color:#606466 ;
+    color: white;
+  }
+.bonus {
+    font-family: Avenir;
+    font-size: 16px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.page_tag {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Avenir;
+    left: 140px;
+}
+
+
+/* LOGIN FORM */
+#frm-login {
+    margin-top: 12%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.login_page_btn {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.btn_login {
+    transition-duration: 0.4s;
+    border: none;
+    padding: 14px 40px;
+    text-align: center;
+}
+  
+.btn_login:hover {
+    background-color:#606466 ;
+    color: white;
+}
+
+/* ADDPRODUCT page */
+#addproduct {
+  margin-top: 12%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+.addbtn {
+  transition-duration: 0.4s;
+  border: none;
+  padding: 14px 40px;
+  text-align: center;
+}
+.addbtn:hover {
+  background-color: #606466  ;
+  color: white;
+}
+
+.contact {
+  margin-top: 15%;
+  margin-left: 35%;
+  margin-right: 35%;
+  font-family: Avenir;
+}
+
+
+/* CONTACT FORM */
+.contact h2{
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.contact p {
+  font-size: 20px;
+}
+#Products {
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#Product_detail
+{
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    border: 2px black;
+    padding: 10px;
+}
